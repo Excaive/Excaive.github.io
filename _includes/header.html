@@ -1,26 +1,19 @@
+<header id="index-header">
+  <div class="top-center">
+      <div class="logo">
+          <a href="{{ "/" | relative_url }}" title="my awesome webtitle">{{ site.webtitle }}</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              {% for i in site.nav %}
+                <li><a href="{{ i[1] }}">{{ i[0] }}</a></li>
+              {% endfor %}
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot.png" alt=""></a>
+      </div>
+  </div>
 
-<!-- Start with the header -->
-<section class="header" id="header">
-
-
-
-    <a class="tab pi-default pi-big pi-flat" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i> My Github</a>
-
-    <!-- Main Head Title -->
-    {% if site.title %}<h2><a href="{{site.baseurl}}/">{{site.title}}</a></h2>{% endif %}
-    {% if site.smalltalk %}<p>{{ site.smalltalk }}</p>{% endif %}
-
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
+</header>
