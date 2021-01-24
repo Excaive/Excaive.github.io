@@ -1,99 +1,88 @@
 ---
-title: Arcana
 layout: default
+pagination: 
+  enabled: true
 ---
-			
-<!-- Banner -->
-	<section id="banner">
-		<header>
-			<h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em></h2>
-			<a href="#" class="button">Learn More</a>
-		</header>
-	</section>
+<div class="home">
 
-<!-- Highlights -->
-	<section class="wrapper style1">
-		<div class="container">
-			<div class="row double">
-				<section class="4u">
-					<div class="box highlight">
-						<i class="icon major fa-paper-plane"></i>
-						<h3>This Is Important</h3>
-						<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-					</div>
-				</section>
-				<section class="4u">
-					<div class="box highlight">
-						<i class="icon major fa-pencil"></i>
-						<h3>Also Important</h3>
-						<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-					</div>
-				</section>
-				<section class="4u">
-					<div class="box highlight">
-						<i class="icon major fa-wrench"></i>
-						<h3>Probably Important</h3>
-						<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-					</div>
-				</section>
-			</div>
-		</div>
-	</section>
+<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
+  <div class="scrim {% if site.cover %}has-cover{% endif %}">
+    <header class="site-header">
+      <h1 class="title">{{ site.title }}</h1>
+      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
+    </header>
+  </div>
+</div>
 
-<!-- Gigantic Heading -->
-	<section class="wrapper style2">
-		<div class="container">
-			<header class="major">
-				<h2>A gigantic heading you can use for whatever</h2>
-				<p>With a much smaller subtitle hanging out just below it</p>
-			</header>
-		</div>
-	</section>
+<div class="wrapper">
+<ul class="post-list">
+  {% for post in paginator.posts %}
+  <li>
+    <h2>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+      <div class="post-categories">
+      {% if post.categories.size > 0 %}in {% for cat in post.categories %}
+        {% if site.jekyll-archives %}
+        <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+        {% else %}
+        <a href="{{ site.baseurl }}/posts/#{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+        {% endif %}
+      {% endfor %}{% endif %}
+      </div>
+    </section>
+  </li>
+  {% if forloop.last == false %}
+  <hr>
+  {% endif %}
+  {% endfor %}
+</ul>
 
-<!-- Posts -->
-	<section class="wrapper style1">
-		<div class="container">
-			<div class="row">
-				<section class="6u">
-					<div class="box post">
-						<a href="#" class="image left"><img src="{{ site.baseurl }}/assets/images/pic01.jpg" alt="" /></a>
-						<div class="inner">
-							<h3>The First Thing</h3>
-							<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-						</div>
-					</div>
-				</section>
-				<section class="6u">
-					<div class="box post">
-						<a href="#" class="image left"><img src="{{ site.baseurl }}/assets/images/pic02.jpg" alt="" /></a>
-						<div class="inner">
-							<h3>The Second Thing</h3>
-							<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-						</div>
-					</div>
-				</section>
-			</div>
-			<div class="row">
-				<section class="6u">
-					<div class="box post">
-						<a href="#" class="image left"><img src="{{ site.baseurl }}/assets/images/pic03.jpg" alt="" /></a>
-						<div class="inner">
-							<h3>The Third Thing</h3>
-							<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-						</div>
-					</div>
-				</section>
-				<section class="6u">
-					<div class="box post">
-						<a href="#" class="image left"><img src="{{ site.baseurl }}/assets/images/pic04.jpg" alt="" /></a>
-						<div class="inner">
-							<h3>The Fourth Thing</h3>
-							<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-	</section>
-	
-	{% include cta.html %}
+<nav class="pagination" role="navigation">
+	<p>
+    {% if paginator.previous_page %}
+			{% if paginator.page == 2 %}
+			<a class="newer-posts" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+			{% else %}
+			<a class="newer-posts" href="{{ site.baseurl }}{{ paginator.next_page_path }}">
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-square fa-stack-2x"></i>
+					<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+				</span>
+			</a>
+			{% endif %}
+		{% else %}
+		<span class="fa-stack fa-lg">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+    </span>
+		{% endif %}
+		<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+		{% if paginator.next_page %}
+		<a class="newer-posts" href="{{ site.baseurl }}{{ paginator.next_page_path }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+		{% else %}
+		<span class="fa-stack fa-lg">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+    </span>
+		{% endif %}
+	</p>
+</nav>
+
+</div>
+</div>
