@@ -4,7 +4,7 @@ title:  "Hello world!"
 date: 2021-01-24
 author: Excaive
 color: rgb(158,235,235)
-cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-banner.png'
+cover: '../assets/pictures/7574671_p0.jpg'
 tags: 
 ---
 
