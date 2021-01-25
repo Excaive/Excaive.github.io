@@ -3,7 +3,7 @@ layout: post
 title:  "Hello world!"
 date: 2021-01-24
 author: Excaive
-color: rgb(148,248,223)
+color: rgb(101,245,217)
 cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-banner.png'
 tags: 
 ---
