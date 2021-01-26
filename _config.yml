@@ -20,7 +20,7 @@ webtitle: 'your awesome webtitle'
 bio: 'your awesome bio'
 about: true
 aboutyou: 'your introduction'
-portraits: '/assets/pictures/example-40864.jpg' # your portraits image file path
+portraits: '/assets/images/example-40864.jpg' # your portraits image file path
 
 # SNS
 SNS: true
