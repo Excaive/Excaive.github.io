@@ -1,7 +1,7 @@
 .hll { background-color: #ffffcc }
 .c { color: #408080; font-style: italic } /* Comment */
 .err { border: 1px solid #FF0000 } /* Error */
-.k { color: #008000; font-weight: bold } /* Keyword */
+.k { color: #116ce4; font-weight: bold } /* Keyword */
 .o { color: #666666 } /* Operator */
 .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
 .cm { color: #408080; font-style: italic } /* Comment.Multiline */
@@ -53,7 +53,7 @@
 .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .s2 { color: #21baa0 } /* Literal.String.Double */
 .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
-.sh { color: #BA2121 } /* Literal.String.Heredoc */
+.sh { color: #21baa0 } /* Literal.String.Heredoc */
 .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
 .sx { color: #21baa0 } /* Literal.String.Other */
 .sr { color: #BB6688 } /* Literal.String.Regex */
