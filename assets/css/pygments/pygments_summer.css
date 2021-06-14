@@ -23,7 +23,7 @@
 .kd { color: #116ce4; font-weight: bold } /* Keyword.Declaration */
 .kn { color: #116ce4; font-weight: bold } /* Keyword.Namespace */
 .kp { color: #008000 } /* Keyword.Pseudo */
-.kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.kr { color: #116ce4; font-weight: bold } /* Keyword.Reserved */
 .kt { color: #B00040 } /* Keyword.Type */
 .m { color: #666666 } /* Literal.Number */
 .s { color: #BA2121 } /* Literal.String */
@@ -55,7 +55,7 @@
 .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
 .sh { color: #BA2121 } /* Literal.String.Heredoc */
 .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
-.sx { color: #008000 } /* Literal.String.Other */
+.sx { color: #21baa0 } /* Literal.String.Other */
 .sr { color: #BB6688 } /* Literal.String.Regex */
 .s1 { color: #21baa0 } /* Literal.String.Single */
 .ss { color: #19177C } /* Literal.String.Symbol */
