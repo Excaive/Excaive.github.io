@@ -26,7 +26,7 @@
 .kr { color: #116ce4; font-weight: bold } /* Keyword.Reserved */
 .kt { color: #B00040 } /* Keyword.Type */
 .m { color: #666666 } /* Literal.Number */
-.s { color: #BA2121 } /* Literal.String */
+.s { color: #21baa0 } /* Literal.String */
 .na { color: #7D9029 } /* Name.Attribute */
 .nb { color: #008000 } /* Name.Builtin */
 .nc { color: #ff0080; font-weight: bold } /* Name.Class */
@@ -34,7 +34,7 @@
 .nd { color: #ff57a5 } /* Name.Decorator */
 .ni { color: #999999; font-weight: bold } /* Name.Entity */
 .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
-.nf { color: #0000FF } /* Name.Function */
+.nf { color: #ff0080 } /* Name.Function */
 .nl { color: #A0A000 } /* Name.Label */
 .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
 .nt { color: #008000; font-weight: bold } /* Name.Tag */
