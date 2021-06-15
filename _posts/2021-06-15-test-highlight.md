@@ -41,7 +41,7 @@ def is_sorted(list_in):
 
 def test_sort(func, list_in):
     """func表示要检测的算法函数，alist为传入的数列"""
-    list_in =  func(list_in)
+    list_in = func(list_in)
     assert is_sorted(list_in), "排序算法错误\n"
 
 
