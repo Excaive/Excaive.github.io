@@ -54,7 +54,7 @@
 .s2 { color: #21baa0 } /* Literal.String.Double */
 .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
 .sh { color: #21baa0 } /* Literal.String.Heredoc */
-.si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.si { color: #00aeff; font-weight: bold } /* Literal.String.Interpol */
 .sx { color: #21baa0 } /* Literal.String.Other */
 .sr { color: #BB6688 } /* Literal.String.Regex */
 .s1 { color: #21baa0 } /* Literal.String.Single */
