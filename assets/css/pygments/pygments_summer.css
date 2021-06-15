@@ -7,7 +7,7 @@
 .cm { color: #408080; font-style: italic } /* Comment.Multiline */
 .cp { color: #BC7A00 } /* Comment.Preproc */
 .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
-.c1 { color: #6b7e7e; font-style: italic } /* Comment.Single */
+.c1 { color: #859797; font-style: italic } /* Comment.Single */
 .cs { color: #408080; font-style: italic } /* Comment.Special */
 .gd { color: #A00000 } /* Generic.Deleted */
 .ge { font-style: italic } /* Generic.Emph */
@@ -28,24 +28,24 @@
 .m { color: #666666 } /* Literal.Number */
 .s { color: #21baa0 } /* Literal.String */
 .na { color: #7D9029 } /* Name.Attribute */
-.nb { color: #038b57 } /* Name.Builtin */
+.nb { color: #3a9fb8 } /* Name.Builtin */
 .nc { color: #ff57a5; font-weight: bold } /* Name.Class */
 .no { color: #880000 } /* Name.Constant */
 .nd { color: #ff57a5 } /* Name.Decorator */
 .ni { color: #999999; font-weight: bold } /* Name.Entity */
 .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
-.nf { color: #f1aa40 } /* Name.Function */
+.nf { color: #46c4ff } /* Name.Function */
 .nl { color: #A0A000 } /* Name.Label */
-.nn { color: #116ce4; font-weight: bold } /* Name.Namespace */
+.nn { color: #5b678a; font-weight: bold } /* Name.Namespace */
 .nt { color: #008000; font-weight: bold } /* Name.Tag */
 .nv { color: #19177C } /* Name.Variable */
 .ow { color: #116ce4; font-weight: bold } /* Operator.Word */
 .w { color: #bbbbbb } /* Text.Whitespace */
-.mb { color: #6b4ea1 } /* Literal.Number.Bin */
-.mf { color: #6b4ea1 } /* Literal.Number.Float */
-.mh { color: #6b4ea1 } /* Literal.Number.Hex */
-.mi { color: #6b4ea1 } /* Literal.Number.Integer */
-.mo { color: #6b4ea1 } /* Literal.Number.Oct */
+.mb { color: #7453b1 } /* Literal.Number.Bin */
+.mf { color: #7453b1 } /* Literal.Number.Float */
+.mh { color: #7453b1 } /* Literal.Number.Hex */
+.mi { color: #7453b1 } /* Literal.Number.Integer */
+.mo { color: #7453b1 } /* Literal.Number.Oct */
 .sa { color: #21baa0 } /* Literal.String.Affix */
 .sb { color: #21baa0 } /* Literal.String.Backtick */
 .sc { color: #21baa0 } /* Literal.String.Char */
